@@ -1,19 +1,19 @@
 
-# fastbkmr
+# rffbkmr
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of fastbkmr is to use supervised random Fourier features to 
+The goal of rffbkmr is to use supervised random Fourier features to 
     approximate the Gaussian process to recude computation times.
 
 ## Installation
 
-You can install the development version of fastbkmr like so:
+You can install the development version of rffbkmr like so:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("Danlu233/fastbkmr")
+devtools::install_github("Danlu233/rffbkmr")
 ```
 
 ## Example
@@ -21,13 +21,13 @@ devtools::install_github("Danlu233/fastbkmr")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(fastbkmr)
+library(rffbkmr)
 
 # load sample data
 data(simudat)
 
 # fit model with 10 basis functions and 1000 iterations
-fit <- fastbkmr(y = simudat$y,
+fit <- rffbkmr(y = simudat$y,
     X = simudat[,1:5],
     Z = simudat[,6:10],
     Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),

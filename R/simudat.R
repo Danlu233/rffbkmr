@@ -1,4 +1,4 @@
-#' Simulated Data for fastbkmr
+#' Simulated Data for rffbkmr
 #'
 #' A sample dataset with outcome, exposures, and covariates.
 #'

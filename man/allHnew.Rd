@@ -7,7 +7,7 @@
 allHnew(fit, Xrange = seq(0.01, 0.99, 0.01), center = NULL, alpha = 0.05)
 }
 \arguments{
-\item{fit}{An object containing the results from \code{fastbkmr} function.}
+\item{fit}{An object containing the results from \code{rffbkmr} function.}
 
 \item{Xrange}{Vector of quantiles for new grid points.}
 
@@ -23,7 +23,7 @@ Estimate marginal exposure-response function on new grid of points
 }
 \examples{
 data(simudat)
-fit <- fastbkmr(y = simudat$y,
+fit <- rffbkmr(y = simudat$y,
 X = simudat[,1:5],
 Z = simudat[,6:10],
 Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),

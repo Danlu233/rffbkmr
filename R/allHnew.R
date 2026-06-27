@@ -1,6 +1,6 @@
 #' @title Estimate marginal exposure-response function on new grid of points
 #'
-#' @param fit An object containing the results from `fastbkmr` function.
+#' @param fit An object containing the results from `rffbkmr` function.
 #' @param Xrange Vector of quantiles for new grid points.
 #' @param center The quantile of all exposures at which the exposure–response function equals zero.
 #' @param alpha 100(1-alpha)% posterior interval (default: 0.05).
@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' data(simudat)
-#' fit <- fastbkmr(y = simudat$y,
+#' fit <- rffbkmr(y = simudat$y,
 #' X = simudat[,1:5],
 #' Z = simudat[,6:10],
 #' Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),

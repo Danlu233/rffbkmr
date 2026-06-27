@@ -25,14 +25,14 @@
 #' @import utils
 #' @examples
 #' data(simudat)
-#' fit <- fastbkmr(y = simudat$y,
+#' fit <- rffbkmr(y = simudat$y,
 #' X = simudat[,1:5],
 #' Z = simudat[,6:10],
 #' Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),
 #' K = 1000,
 #' J = 10,
 #' verbose = FALSE)
-fastbkmr <- function(y,
+rffbkmr <- function(y,
                       X,
                       Z,
                       Z.eq = as.formula("~ .-1"),

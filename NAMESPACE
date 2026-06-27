@@ -2,7 +2,7 @@
 
 export(allHnew)
 export(bivarHnew)
-export(fastbkmr)
+export(rffbkmr)
 export(univarHnew)
 import(MASS)
 import(stats)

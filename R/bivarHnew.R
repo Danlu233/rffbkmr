@@ -1,6 +1,6 @@
 #' @title Estimate bivariate exposure-response function on new grid of points
 #'
-#' @param fit An object containing the results from `fastbkmr` function.
+#' @param fit An object containing the results from `rffbkmr` function.
 #' @param whichX Vector identifying which exposure should be selected to varying. The number of selected exposures should be two.
 #' @param fixlevel Quantile that other exposures will be fixed at (default: 0.5).
 #' @param center The quantile of the selected exposure at which the exposure–response function equals zero.
@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' data(simudat)
-#' fit <- fastbkmr(y = simudat$y,
+#' fit <- rffbkmr(y = simudat$y,
 #' X = simudat[,1:5],
 #' Z = simudat[,6:10],
 #' Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),

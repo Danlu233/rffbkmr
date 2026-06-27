@@ -15,7 +15,7 @@ univarHnew(
 )
 }
 \arguments{
-\item{fit}{An object containing the results from \code{fastbkmr} function.}
+\item{fit}{An object containing the results from \code{rffbkmr} function.}
 
 \item{whichX}{Vector identifying which exposure should be selected to varying. The number of selected exposures should be one.}
 
@@ -37,7 +37,7 @@ Estimate univariate exposure-response function on new grid of points
 }
 \examples{
 data(simudat)
-fit <- fastbkmr(y = simudat$y,
+fit <- rffbkmr(y = simudat$y,
 X = simudat[,1:5],
 Z = simudat[,6:10],
 Z.eq = as.formula("~ z1 + as.factor(z2) + z3 + z4 + as.factor(z5)"),

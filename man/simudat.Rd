@@ -3,7 +3,7 @@
 \docType{data}
 \name{simudat}
 \alias{simudat}
-\title{Simulated Data for fastbkmr}
+\title{Simulated Data for rffbkmr}
 \format{
 A list with:
 \describe{

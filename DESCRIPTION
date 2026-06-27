@@ -1,4 +1,4 @@
-Package: fastbkmr
+Package: rffbkmr
 Title: Approximate Bayesian Kernel Machine Regression via Random Fourier Features
 Version: 0.0.0.9000
 Authors@R: 
